@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"dev": "slidev"
+	},
+	"dependencies": {
+		"@slidev/cli": "^0.27.10",
+		"@slidev/theme-default": "^0.21.0"
+	}
+}
