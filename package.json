@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"dev": "slidev",
+		"build": "slidev export"
+	},
+	"devDependencies": {
+		"@slidev/cli": "^0.27.10",
+		"@slidev/theme-default": "^0.21.0",
+		"playwright-chromium": "^1.16.3"
+	}
+}
