@@ -1,11 +1,15 @@
 {
+	"type": "module",
 	"scripts": {
 		"dev": "slidev",
-		"build": "slidev export"
+		"build": "node scripts/build.js",
+		"export": "slidev export"
 	},
 	"devDependencies": {
 		"@slidev/cli": "^0.27.10",
 		"@slidev/theme-default": "^0.21.0",
+		"execa": "^6.0.0",
+		"playwright": "^1.16.3",
 		"playwright-chromium": "^1.16.3"
 	}
 }

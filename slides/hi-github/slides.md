@@ -1,3 +1,7 @@
+---
+download: true
+---
+
 # Hi GitHub
 
 嗨, GitHub by @yuler
