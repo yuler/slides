@@ -27,3 +27,22 @@ for (const slide of slides) {
 		process.stderr.write(error.stderr)
 	}
 }
+
+// Write `index.html` to dist
+const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+</head>
+<body>
+    <ul>
+        ${slides.map(path => `<li><a href="./${path}">${path}</a></li>`)}
+    </ul>
+</body>
+</html>
+`
+fs.writeFileSync(path.resolve(dist, 'index.html'), html)
