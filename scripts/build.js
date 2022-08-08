@@ -3,24 +3,22 @@ import fs from 'node:fs'
 import {fileURLToPath} from 'node:url'
 import {execa} from 'execa'
 
+const slides = ['hi-github']
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
-const folder = path.resolve(root, 'slides')
 const dist = path.resolve(root, 'dist')
-const slides = fs.readdirSync(folder)
-
-fs.mkdirSync(dist, {recursive: true})
 
 // Build slides
 for (const slide of slides) {
-	const entry = path.resolve(folder, slide)
+	const entry = path.resolve(root, slide, 'slides.md')
 	execa('slidev', [
 		'build',
 		entry,
 		'--out',
 		path.resolve(dist, slide),
 		'--base',
-		`/${slide}/`,
+		`${slide}`,
 	]).stdout.pipe(process.stdout)
 }
 
@@ -41,4 +39,6 @@ const html = `
 </body>
 </html>
 `
+
+fs.mkdirSync(dist, {recursive: true})
 fs.writeFileSync(path.resolve(dist, 'index.html'), html)

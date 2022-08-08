@@ -56,7 +56,7 @@ TODO: Update links
 
 也可以在浏览器的地址栏 `github.com` 后按 `tab` 按, 直接触发搜索
 
-![Chrome search](/hi-github/chrome-search.png)
+![Chrome search](/chrome-search.png)
 
 </v-click>
 

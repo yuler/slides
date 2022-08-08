@@ -1,4 +1,7 @@
 {
+	"name": "slides",
+	"description": "yuler's slides",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "slidev slides/hi-github.md --open",
