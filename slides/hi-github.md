@@ -1,5 +1,18 @@
 ---
-download: true
+theme: seriph
+background: https://source.unsplash.com/collection/94734566/1920x1080
+class: text-center
+highlighter: shiki
+lineNumbers: false
+info: |
+  ## Slidev Starter Template
+  Presentation slides for developers.
+
+  Learn more at [Sli.dev](https://sli.dev)
+drawings:
+  persist: false
+css: unocss
+title: Hi GitHub
 ---
 
 # Hi GitHub
@@ -11,71 +24,77 @@ download: true
 - <https://docs.github.com/>
 - <https://github.com/phodal/github>
 
+<!--
+TODO: Update links
+-->
+
 ---
 
 # GitHub Web
 
-<v-click>
-
 ## Shortcuts
-
-</v-click>
 
 <v-clicks>
 
-- ? # 打开快捷键帮助面板
-- Command + K # 打开命令选项板
-- . # 打开 github.dev 编辑器
+- `?` # 打开[快捷键](https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts)帮助面板
+
+- `Command + K` # 打开[命令面板](https://docs.github.com/cn/get-started/using-github/github-command-palette)
+
+- `.` # 打开 github.dev [基于 Web 的编辑器](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)
 
 </v-clicks>
 
-<v-click>
+---
+
+# GitHub Web
 
 ## Search
 
-强大的搜索功能 https://github.com/search
+> 强大的搜索功能 https://github.com/search, [在 GitHub 上搜索](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/about-searching-on-github)
+
+<v-click>
+
+也可以在浏览器的地址栏 `github.com` 后按 `tab` 按, 直接触发搜索
+
+![Chrome search](/hi-github/chrome-search.png)
 
 </v-click>
 
 <v-clicks>
 
-- repo:yuler/actions extension:yml
-- user:sindresorhus stars:>1000
+- stars:>100000
+
+- user:sindresorhus stars:>1000 sort:stars
+
+- is:issue author:@me sort:updated
+
+- user:@me is:<issues|pr> is:<open|merged>
 
 </v-clicks>
 
-<v-click>
+---
+
+# GitHub Web
 
 ## Browse extension for GitHub
 
-- <https://www.octotree.io/>
-- <https://github.com/refined-github/refined-github>
+- [octotree](https://www.octotree.io)
 
-</v-click>
+<!-- TODO: 演示 Refined GitHub -->
 
----
-
-# The `gh` CLI
-
-强大的 `gh` 命令行工具
-
-- https://github.com/cli/cli
-
-## gh extension
-
-- [yuler/gh-todo](https://github.com/yuler/gh-todo)
-- [yuler/gh-download](https://github.com/yuler/gh-download)
-
-## Related
-
-- https://github.com/tj/git-extras
-- [GitHub dotfile Repos](https://github.com/search?q=dotfiles+type%3Arepo+stars%3A%3E5000&type=repositories)
+- [Refined GitHub](https://github.com/refined-github/refined-github)
 
 ---
 
-# Customizing your profile
+# GitHub `gh` CLI
 
-[创建一个个人资料页面](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+> `gh` [命令行工具](https://github.com/cli/cli)
+
+---
+
+# Customizing your GitHub profile
+
+> [创建一个个人资料页面](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
 
 ---
 
@@ -115,6 +134,15 @@ download: true
 - Code Owners
 - GitHub Apps
 - Release Page
+
+---
+
+# Github Pages
+
+- GitHub Pages
+
+- Vercel
+- Netlify
 
 ---
 
