@@ -4,7 +4,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "slidev slides/hi-github.md --open",
+		"clean": "rm -rf dist",
+		"dev": "cd hi-github && slidev --open",
 		"build": "node scripts/build.js",
 		"export": "slidev export"
 	},
