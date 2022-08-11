@@ -9,7 +9,7 @@ css: unocss
 
 # Hi GitHub
 
-GitHub 漫游 @yuler
+GitHub 漫游指南 @yuler
 
 ---
 
