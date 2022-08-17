@@ -59,10 +59,10 @@ li {
 
 <v-clicks>
 
-- stars:>100000
-- user:sindresorhus stars:>1000 sort:stars
-- is:issue author:@me sort:updated
-- user:@me is:<issues|pr> is:<open|merged>
+- `stars:>100000`
+- `user:sindresorhus stars:>1000 sort:stars`
+- `is:issue author:@me sort:updated`
+- `user:@me is:<issues|pr> is:<open|merged>`
 
 </v-clicks>
 
@@ -95,7 +95,7 @@ li {
 
 <v-clicks>
 
-- [octotree](https://www.octotree.io)
+- [Octotree](https://www.octotree.io)
 - [OctoLinker](https://github.com/OctoLinker/OctoLinker)
 - [Refined GitHub](https://github.com/refined-github/refined-github)
 - [Sourcegraph](https://about.sourcegraph.com/)
@@ -422,7 +422,7 @@ jobs:
 
 <div opacity-60>
 
-GitHub [Skyline](https://skyline.github.com)，生成 GitHub 共享墙的 3D 模型，可以通过 3D 打印机打印出来
+GitHub [Skyline](https://skyline.github.com)，生成 GitHub 贡献墙的 3D 模型，可以通过 3D 打印机打印出来
 
 </div>
 
