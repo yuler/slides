@@ -8,12 +8,13 @@
 		"dev": "cd deepseek && slidev --open",
 		"clean": "rm -rf dist",
 		"build": "node scripts/build.js",
-		"export": "slidev export"
+		"export": "cd deepseek && slidev export"
 	},
 	"devDependencies": {
 		"@slidev/cli": "^0.35.4",
 		"@slidev/theme-default": "^0.21.2",
 		"@slidev/theme-seriph": "^0.21.3",
-		"execa": "^6.1.0"
+		"execa": "^6.1.0",
+		"playwright-chromium": "^1.50.1"
 	}
 }

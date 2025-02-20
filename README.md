@@ -5,3 +5,4 @@
 ## Slides
 
 - hi-github
+- deepseek

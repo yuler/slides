@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: ^0.35.4
-        version: 0.35.6(@babel/parser@7.26.9)(postcss@8.5.3)(rollup@2.79.2)
+        version: 0.35.6(@babel/parser@7.26.9)(playwright-chromium@1.50.1)(postcss@8.5.3)(rollup@2.79.2)
       '@slidev/theme-default':
         specifier: ^0.21.2
         version: 0.21.2
@@ -20,6 +20,9 @@ importers:
       execa:
         specifier: ^6.1.0
         version: 6.1.0
+      playwright-chromium:
+        specifier: ^1.50.1
+        version: 1.50.1
 
 packages:
 
@@ -1539,6 +1542,16 @@ packages:
   plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
+  playwright-chromium@1.50.1:
+    resolution: {integrity: sha512-0IKyCdwS5dDoGE3EqqfYtX24qF6+ef1UI6OLn2VUi2aHOgsI/KnESRm6/Ws0W78SrwhLi6lLlAL6fQISoO1cfw==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  playwright-core@1.50.1:
+    resolution: {integrity: sha512-ra9fsNWayuYumt+NiM069M6OkcRb1FZSK8bgi66AtpFoWkg2+y0bJSNmkFrWhMbEBbVKC/EruAHH3g0zmtwGmQ==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   popmotion@11.0.5:
     resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
 
@@ -2231,7 +2244,7 @@ snapshots:
   '@sindresorhus/merge-streams@2.3.0':
     optional: true
 
-  '@slidev/cli@0.35.6(@babel/parser@7.26.9)(postcss@8.5.3)(rollup@2.79.2)':
+  '@slidev/cli@0.35.6(@babel/parser@7.26.9)(playwright-chromium@1.50.1)(postcss@8.5.3)(rollup@2.79.2)':
     dependencies:
       '@antfu/utils': 0.5.2
       '@hedgedoc/markdown-it-task-lists': 1.0.5(markdown-it@13.0.2)
@@ -2280,6 +2293,8 @@ snapshots:
       vue: 3.5.13
       windicss: 3.5.6
       yargs: 17.7.2
+    optionalDependencies:
+      playwright-chromium: 1.50.1
     transitivePeerDependencies:
       - '@babel/parser'
       - '@svgr/core'
@@ -3727,6 +3742,12 @@ snapshots:
       pathe: 2.0.3
 
   plantuml-encoder@1.4.0: {}
+
+  playwright-chromium@1.50.1:
+    dependencies:
+      playwright-core: 1.50.1
+
+  playwright-core@1.50.1: {}
 
   popmotion@11.0.5:
     dependencies:

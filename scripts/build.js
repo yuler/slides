@@ -2,10 +2,10 @@
 
 import path from 'node:path'
 import fs from 'node:fs'
-import {fileURLToPath} from 'node:url'
-import {execa} from 'execa'
+import { fileURLToPath } from 'node:url'
+import { execa } from 'execa'
 
-const slides = ['hi-github']
+const slides = ['hi-github', 'deepseek']
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
@@ -42,5 +42,5 @@ const html = `
 </html>
 `
 
-fs.mkdirSync(dist, {recursive: true})
+fs.mkdirSync(dist, { recursive: true })
 fs.writeFileSync(path.resolve(dist, 'index.html'), html)
